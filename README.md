@@ -1,6 +1,4 @@
-local highlightName = "RaelHubESPHighlight"
 
-local meshesFolder = game.Workspace["a046909c-1905-f6be-b42f-ab76084d0000"].Map.Tasks.Computer.Meshes
 
 local function addHighlightToMesh(mesh)
     if not mesh:FindFirstChild(highlightName) then
@@ -157,8 +155,9 @@ game.Players.PlayerAdded:Connect(function(player)
 end
 })
 
+local highlightName = "RaelHubESPHighlight"
 
-
+local meshesFolder = game.Workspace["a046909c-1905-f6be-b42f-ab76084d0000"].Map.Tasks.Computer.Meshes
 
 local Toggle = Maintab:CreateToggle({
    Name = "Esp",
@@ -176,4 +175,4 @@ local Toggle = Maintab:CreateToggle({
         end
       end
    end,
-})
+}) 
